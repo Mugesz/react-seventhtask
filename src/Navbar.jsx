@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar sticky-top mb-2 bg-secondary">
+    <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
       <div className="container px-4 px-lg-5">
-        <Link className="btn" to="/">
+        <Link className="navbar-brand" to="/">
           <h3>Dashboard</h3>
         </Link>
 
@@ -22,13 +22,13 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-        <li className="nav-item">
-              <Link className="btn" to={"/createbooks"}>
-               <h4>Create Books</h4> 
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li className="nav-item">
+              <Link className="nav-link" to={"/createbooks"}>
+                <h4>Create Books</h4>
               </Link>
             </li>
-        </ul>
+          </ul>
         </div>
       </div>
     </nav>
