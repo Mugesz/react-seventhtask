@@ -16,8 +16,7 @@ const Dashboard = () => {
               <div className="card border-info bg-info">
                 <div className="card-header d-flex justify-content-between align-items-center">
                   <h2>
-                    Book Name:{" "}
-                    <span className="text-light">{item.title}</span>{" "}
+                    Book Name: <span className="text-light">{item.title}</span>{" "}
                   </h2>
                 </div>
                 <div className="card-body d-flex flex-column">
